@@ -14,3 +14,8 @@ def division(a,b):
 
 def potencia(base, exponente):
     return base ** exponente
+
+def modulo(a, b):
+    if b == 0:
+        return "No se puede calcular modulo entre 0"
+    return a % b
