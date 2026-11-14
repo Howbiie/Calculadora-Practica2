@@ -43,3 +43,8 @@ def promedio(numeros):
     if len(numeros) == 0:
         return "No se puede calcular el promedio de una lista vacia"
     return sum(numeros) / len(numeros)
+
+def redondeo(numero, decimales):
+    if not isinstance(decimales, int) or decimales < 0:
+        return "La cantidad de decimales debe ser un entero no negativo"
+    return round(numero, decimales)
