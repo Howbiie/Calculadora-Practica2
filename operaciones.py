@@ -19,3 +19,8 @@ def modulo(a, b):
     if b == 0:
         return "No se puede calcular modulo entre 0"
     return a % b
+
+def raiz_cuadrada(numero):
+    if numero < 0:
+        return "No se permite raiz cuadrada de negativos"
+    return numero ** 0.5
