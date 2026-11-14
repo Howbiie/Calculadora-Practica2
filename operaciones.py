@@ -38,3 +38,8 @@ def factorial(numero):
     for i in range(1, numero + 1):
         resultado *= i
     return resultado
+
+def promedio(numeros):
+    if len(numeros) == 0:
+        return "No se puede calcular el promedio de una lista vacia"
+    return sum(numeros) / len(numeros)
