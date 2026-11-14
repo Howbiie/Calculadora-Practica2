@@ -55,4 +55,4 @@ python calculadora.py
 
 ## Autor
 
-Howbiie
+Camila Lorena Mendoza Quezada
