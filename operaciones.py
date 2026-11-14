@@ -48,3 +48,12 @@ def redondeo(numero, decimales):
     if not isinstance(decimales, int) or decimales < 0:
         return "La cantidad de decimales debe ser un entero no negativo"
     return round(numero, decimales)
+
+def validar_numero(entrada):
+    try:
+        numero = float(entrada)
+        if not __import__("math").isfinite(numero):
+            return None
+        return numero
+    except (ValueError, TypeError):
+        return None
